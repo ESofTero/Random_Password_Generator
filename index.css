@@ -1,0 +1,189 @@
+body {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    color: #D5D4D8;
+}
+
+#solo-proyect {
+    background: #1F2937;
+    width: 550px;
+    height: 550px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+#texts-el {
+    margin-right: 90px;
+    text-align: start;
+    font-size: 20px;
+}
+
+#texts-el h1{
+    font-size: 40px;
+}
+
+h1 span {
+    display: block;
+}
+
+#h1-color-2 {
+    color: #4ADF86;
+}
+
+#settings-el {
+    margin: 18.5px 20px;
+}
+
+#numbers-set {
+    display: flex;
+    align-items: center;
+    margin: 8.5px 0px;
+}
+
+#symbols-set {
+    display: flex;
+    align-items: center;
+    margin: 8.5px 0px;
+}
+
+#symbols-set p {
+    margin: 8.5px 4px 8.5px 0px;
+}
+
+#length-set {
+    display: flex;
+    align-items: center;
+    margin: 8.5px 0px;
+}
+
+#length-set p {
+    margin-right: 10px;
+}
+
+.toogle-btn {
+    width: 55px;
+    height: 34px;
+    font-size: 15px;
+    margin: 0px 3.5px 0px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #273549;
+    color: #10B981;
+    font-weight: 700;
+}
+
+.active {
+    background: #10B981;
+    color: #D5D4D8;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#input-el {
+    text-align: center;
+    width: 55px;
+    height: 34px;
+    margin: 0px 3.5px 0px 17px;
+    border: none;
+    border-radius: 6px;
+    background: #273549;
+    color: #10B981;
+    outline: none;
+}
+
+#input-el {
+    appearance: textfield; /* Estándar */
+    -webkit-appearance: textfield; /* Safari y Chrome */
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Para ocultar las flechas en todos los navegadores */
+#input-el::-webkit-inner-spin-button,
+#input-el::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#input-el::placeholder{
+    color: #D5D4D8;
+    opacity: .5;
+    text-align: center;
+}
+
+#generate-btn {
+    margin: 2px;
+    color: #D5D4D8;
+    padding: 9px 17px 9px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #10B981;
+    display: flex;
+    margin: 10px 0px 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2F3E53;
+}
+
+#password-zone {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0px;
+}
+
+.passwords {
+    color: #10B981;
+    background: #273549;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #2F3E53;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 12.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.tooltiptext::after {
+    content: none;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;   
+    cursor: pointer;
+}
+

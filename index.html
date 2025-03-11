@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Viga&display=swap" rel="stylesheet">
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        
+        <div id="solo-proyect">
+            <div id="container-el">
+                <div id="texts-el">
+                    <h1>
+                        <span id="h1-color-1">Generate a</span>
+                        <span id="h1-color-2">random password</span>
+                    </h1>
+                    <p>Never use an insecure password again.</p>
+                </div>
+
+                <div id="settings-el">
+                    <div id="numbers-set">
+                        <p>Numbers:</p>
+                        <button id="on-btn-num" class="toogle-btn">ON</button>
+                        <button id="off-btn-num" class="toogle-btn active">OFF</button>
+                    </div>
+                    <div id="symbols-set">
+                        <p>Symbols:</p>
+                        <button id="on-btn-sym" class="toogle-btn">ON</button>
+                        <button id="off-btn-sym" class="toogle-btn active">OFF</button>
+                    </div>
+                    <div id="length-set">
+                        <p>Length:</p>
+                        <input type="number" id="input-el" min="4" max="15" placeholder="4-15">
+                    </div>
+                </div>
+
+                <button id="generate-btn">Generate passwords</button>
+
+                <hr>
+
+                <div id="password-zone">
+                    <div>
+                        <div class="passwords tooltip">
+                            <span class="tooltiptext" id="tooltip-el-one"></span>
+                            <p id="password-el-one"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="passwords tooltip">
+                            <span class="tooltiptext" id="tooltip-el-two"></span>
+                            <p id="password-el-two"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
