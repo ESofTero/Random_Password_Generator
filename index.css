@@ -21,7 +21,7 @@ body {
 }
 
 #texts-el {
-    margin-right: 90px;
+    width: 450px;
     text-align: start;
     font-size: 20px;
 }
@@ -97,9 +97,6 @@ h1 span {
     background: #273549;
     color: #10B981;
     outline: none;
-}
-
-#input-el {
     appearance: textfield; /* Estándar */
     -webkit-appearance: textfield; /* Safari y Chrome */
     -moz-appearance: textfield; /* Firefox */
@@ -118,7 +115,12 @@ h1 span {
     text-align: center;
 }
 
-#generate-btn {
+#gen-and-clear{
+    display: flex;
+    gap: 20px;
+}
+
+.btns {
     margin: 2px;
     color: #D5D4D8;
     padding: 9px 17px 9px 15px;
@@ -127,6 +129,11 @@ h1 span {
     background: #10B981;
     display: flex;
     margin: 10px 0px 20px;
+}
+
+#clear-btn {
+    background: #273549;
+    color: #10B981;
 }
 
 button {

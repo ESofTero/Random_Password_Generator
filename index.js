@@ -17,6 +17,8 @@ const passwordElOne = document.getElementById("password-el-one");
 const passwordElTwo = document.getElementById("password-el-two"); 
 const tooltipOne = document.getElementById("tooltip-el-one"); 
 const tooltipTwo = document.getElementById("tooltip-el-two");
+const clearBtn = document.getElementById("clear-btn");
+const alerts = document.getElementById("alerts");
 
 let ifNum = false;
 let ifSym = false;
@@ -77,6 +79,14 @@ generateBtn.addEventListener("click", function(){
   }  
 })
 
+clearBtn.addEventListener("dblclick", function(){
+    inputLength.value = "";
+    passwordElOne.textContent = "";
+    passwordElTwo.textContent = "";
+    alreadyGenerated = false;
+})
+
+
 function checkWhatType(){
     if(ifNum && ifSym){
         return allCharacters;
@@ -94,15 +104,16 @@ function renderPassword(){
     passwordOne = "";
     passwordTwo = "";
     if(inputLength.value === ""){
-        alert("Please enter a number");
+        alerts.textContent = "Please enter a password length";
         return;
     } else if (inputLength.value < 4){
-        alert("Password length must be at least 4 characters");
+        alerts.textContent = "Password length must be at least 4 characters";
         return;
     } else if (inputLength.value > 15){
-        alert("Password length must be at most 15 characters");
+        alerts.textContent = "Password length must be at most 15 characters";
         return;
     } else {
+        alerts.textContent = "Never use an insecure password again.";
         for (let i = 0; i < inputLength.value; i++){
             passwordOne += arr[Math.floor(Math.random() * arr.length)];
             passwordTwo += arr[Math.floor(Math.random() * arr.length)];
